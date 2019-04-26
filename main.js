@@ -27,7 +27,7 @@ $(document).ready(function() {
   <div class="card-body">
     <h5 class="card-title">${response.articles[i].title}</h5>
     <p class="card-text">${response.articles[i].description}</p>
-    <a href="${response.articles[i].source.name}" class="btn btn-primary">Learn More</a>
+    <a href="${response.articles[i].url}" class="btn btn-primary">Learn More</a>
   </div>
 </div>
 
