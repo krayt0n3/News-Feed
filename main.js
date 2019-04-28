@@ -31,7 +31,7 @@ var queryURL = "https://newsapi.org/v2/everything?q=" + query + "&from=" + weekT
   </div>
 </div>
 
-    `);
+    `);  $('#newsinput').val('');
     }
     }
     )
