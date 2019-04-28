@@ -1,15 +1,15 @@
 
+
+
+var query;
+$(document).on('click', '#submit', function(event) {
+event.preventDefault();
 var query = $('#newsinput').val();
 var time = moment();
 var past = moment().subtract(7, 'days').calendar();
 var currentTime = moment().format("YYYY-MM-DD");
 var weekTime = moment(past).format("YYYY-MM-DD");
-var queryURL = "https://newsapi.org/v2/everything?q=politics&from=" + weekTime + "&to=" + currentTime + "&sortBy=popularity&apiKey=b6d2347a5d08474fa7e6b3fa1b9b5de6";
-
-
-
-
-$(document).ready(function() {
+var queryURL = "https://newsapi.org/v2/everything?q=" + query + "&from=" + weekTime + "&to=" + currentTime + "&sortBy=popularity&apiKey=b6d2347a5d08474fa7e6b3fa1b9b5de6";
 
 
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
         method: 'GET'
     }).then((response) => {
         console.log(response);
-        for (let i = 1; i < 20; i++) {
+        for (let i = 1; i < 5; i++) {
             $('#news').append(`
 
 <div class="card" style="width: 18rem;">
@@ -35,5 +35,4 @@ $(document).ready(function() {
     }
     }
     )
-    }
-);
+    })
