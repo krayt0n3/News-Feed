@@ -4,6 +4,8 @@
 
 .mb-3 {
     width:fit-content;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .list-group-item:hover {
@@ -13,4 +15,9 @@ color: white;
 
 a:hover {
     text-decoration: none;
+}
+
+.card {
+    margin: auto;
+    width: 25rem;
 }
