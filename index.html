@@ -17,11 +17,14 @@
   </head>
   <body>
         <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">What are you looking for?</label>
-                  <input type="text" class="form-control" id="newsinput" aria-describedby="emailHelp" placeholder="Search">
-                  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                </div>
+
+                <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="newsinput" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="submit">Submit</button>
+                        </div>
+                      </div>
+
                 </form>
     <span id="news"></span>
     <!--jQuery-->
