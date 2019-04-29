@@ -10,3 +10,7 @@
 background-color: #333;
 color: white;
 }
+
+a:hover {
+    text-decoration: none;
+}
