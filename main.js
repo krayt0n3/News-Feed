@@ -20,9 +20,9 @@ var queryURL = "https://newsapi.org/v2/everything?q=" + query + "&from=" + weekT
             $('#news').append(`
 
 
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 25rem;">
   <ul class="list-group list-group-flush">
-  <a href="${response.articles[i].url}" target="_blank"><li class="list-group-item">${response.articles[i].title}</li></a>
+  <a href="${response.articles[i].url}" target="_blank"><li class="list-group-item"><h5>${response.articles[i].title}</h5><br /><p>${response.articles[i].author}</p></li></a>
   </ul>
 </div>
 
