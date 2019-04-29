@@ -5,3 +5,8 @@
 .mb-3 {
     width:fit-content;
 }
+
+.list-group-item:hover {
+background-color: #333;
+color: white;
+}
